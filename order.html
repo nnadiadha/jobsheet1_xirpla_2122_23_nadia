@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Neko Palace | Homepage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="navbar.js" defer></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        
+            <a href="index.html"><img draggable="false" src="img/logo.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html"><img class="cart" src="img/cart.png" alt=""></a></li>
+            </ul>
+    </nav>
+    <!-- navbar end -->
+    <div class="wrapperr">
+    <div class="wrapform">
+        <form action="">
+            <h2>Order Form</h2>
+            <div class="orders">
+
+            <div class="orderr">
+            <div class="order1">
+                <input class="ordera" type="checkbox" name="opt" id="menu1">
+                <img class="ordera" src="img/affocato.png" alt="">
+                <label for="menu1">Affocato</label>
+                <input type="number" min="1" max="100">
+                <em>$8.99</em>
+            </div>
+            <div class="order1">
+                <input class="ordera" type="checkbox" name="opt" id="menu2">
+                <img class="ordera" src="img/wingor.png" alt="">
+                <label for="menu2">Wingor</label>
+                <input type="number" min="1" max="100">
+                <em>$6.9</em>
+            </div>
+            <div class="order1">
+                <input class="ordera" type="checkbox" name="opt" id="menu3">
+                <img class="ordera" src="img/pancat.png" alt="">
+                <label for="menu3">Pancat</label>
+                <input type="number" min="1" max="100">
+                <em>$13.99</em>
+            </div>
+            </div>
+
+            <div class="payment">
+                <p>Choose Payment Method:</p><br>
+
+                <div class="pay">
+                <input type="radio" id="cash" name="payment">
+                <label for="cash">Cash</label>
+                </div>
+
+                <div class="pay">
+                <input type="radio" id="debit" name="payment">
+                <label for="debit">Debit</label>
+                </div>
+                
+                <div class="pay">
+                <input type="radio" id="other" name="payment">
+                <label for="other">Others</label>
+                </div>
+
+                <div class="customer-info">
+                    <div class="pay">
+                    <p>Name:</p><br>
+                    <input type="text">
+                    </div>
+
+                    <div class="pay">
+                    <p>Address:</p><br>
+                    <input type="text">
+                    </div>
+
+                    <div class="pay">
+                    <p>Phone Number:</p><br>
+                    <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
