@@ -30,11 +30,14 @@
                 </li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="order.html"><img class="cart" src="img/cart.png" alt=""></a></li>
+                <li><a href="account.html"><img class="cart" src="img/account.png" alt=""></a></li>
             </ul>
     </nav>
     <!-- navbar end -->
-
-    <audio autoplay loop>
+    
+    <div class="audio" onclick="openAudio()" id="audioo"><img src="img/volume.png" alt=""></div>
+    <div id="modal" onclick="closeAudio()"></div>
+    <audio autoplay loop controls id="audio">
         <source src="img/Little Happiness.mp3" type="audio/mp3">
     </audio>
 
@@ -92,7 +95,8 @@
             <div><iframe width="560" height="315" src="https://www.youtube.com/embed/qFVhgbuMjVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe></div>
         </div>
         <div class="aboutus price" id="c5">
-        
+            
+            <div class="table">
             <table>
                 <caption>Membership</caption>
                 <tr>
@@ -116,6 +120,7 @@
                     <td>190K</td>
                 </tr>
             </table>
+            </div>
         </div>
     <!-- </div> -->
 

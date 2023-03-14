@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Neko Palace | Homepage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="navbar.js" defer></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        
+        <a href="#"><img draggable="false" src="img/logo.png" alt=""></a>
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html"><img class="cart" src="img/cart.png" alt=""></a></li>
+            <li><a href="account.html"><img class="cart" src="img/account.png" alt=""></a></li>
+        </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="wrapper">
+        <div class="user-wrap">
+            <div class="profile">
+                <img src="img/profile.jpg" alt="">
+                <div class="text">
+                <h2>Nnadiadha</h3>
+                <p>Golden Cat</p>
+                </div>
+                <div class="option">
+                    <button onclick="openEdit()">edit profile</button>
+                    <button>log out</button>
+                </div>
+            </div>
+
+            <div class="bio">
+                <p>Aspiring cat(s) owner. Would like to have new experiences with cute cats and delicious food.</p>
+            </div>
+        </div>
+
+        <div id="modal2" onclick="closeEdit()"></div>
+
+        <div class="edit-profile" id="edit-profile">
+            <div class="wrap-edit">
+                <form action="">
+                    <div class="edit">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    </div>
+                    <div class="edit">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    </div>
+                    <div class="edit">
+                    <label for="picture">Profile Picture</label>
+                    <input type="file" id="picture">
+                    </div>
+                    <div class="edit">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio"></textarea>
+                    </div>
+                    <div class="edit">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="none" selected disabled hidden>--choose--</option>
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                        <option value="">prefer not to say</option>
+                    </select>
+                    </div>
+                    <div class="edit">
+                    <label for="birth">Date Of Birth</label>
+                    <input type="date" id="birth">
+                    </div>
+
+                    <button type="submit" onclick="closeEdit()"> submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -29,9 +29,25 @@ document.addEventListener('scroll',()=>{
 })
 let arr = new Array("adsads","adsadasd","dasdasd");
 let arr1 = ["janet","adha","nuT"]
-// const book = document.getElementById("bookmark").item(0);
-// document.addEventListener('scroll',()=>{
-//   if(this.scrollY <= PX) book.classList.remove("bookmarkscrolled")
-//   if(this.scrollY >= PX) book.classList.add("bookmarkscrolled")
-//   if(this.scrollY >= PX) book.classList.remove("bookmark")
-// })
+
+function openAudio(){
+  document.getElementById("audio").style.display = "block";
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("audioo").style.display = "none";
+}
+
+function closeAudio(){
+  document.getElementById("audio").style.display = "none";
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("audioo").style.display = "block";
+}
+
+function openEdit() {
+  document.getElementById("edit-profile").style.display = "block";
+  document.getElementById("modal2").style.display = "block";
+}
+
+function closeEdit(){
+  document.getElementById("edit-profile").style.display = "none";
+  document.getElementById("modal2").style.display = "none";
+}

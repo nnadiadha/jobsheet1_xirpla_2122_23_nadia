@@ -27,7 +27,7 @@ body {
 
 nav {
   /* background-color: #b332324e; */
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   top: 0;
   display: flex;
@@ -222,8 +222,6 @@ div.anu {
 
 .why {
   background: url(img/background3.png);
-  /* background-color: #ede5d2; */
-  /* background: url(img/background.png); */
   display: grid;
   background-size: cover;
 }
@@ -315,20 +313,30 @@ div.anu {
 }
 
 .price table {
-  /* border-collapse: collapse; */
-  margin-top: 90px;
-  /* border: 2px solid; */
-  width: 60%;
+  /* display: flex; */
+  margin: auto;
   text-align: center;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  margin-top: 125px;
+  width: 600px;
+  height: 200px;
+  background-color: #ff9335;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .price table th {
   background-color: #fc6c6c;
-  
+  border:none;
 }
 
 .price table td {
-  padding: 7px;
+  padding: 10px;
   background-color: #fff1c4;
   
 }
@@ -350,6 +358,10 @@ div.anu {
   margin-bottom: 10px;
 }
 
+.orderr {
+  height: 225px;
+  overflow-y:scroll;
+}
 .wrapform form .orderr input {
   width: 40px;
 }
@@ -358,7 +370,7 @@ div.anu {
   width: 200px;
 }
 
-form button {
+.wrapform form button {
   background-color: #ff934b;
   border-radius: 15px;
   padding: 10px;
@@ -502,4 +514,164 @@ nav img.cart {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #fe5315;
+}
+
+audio {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  bottom: 20px;
+  right: 20px;
+}
+
+.audio img {
+  width: 100%;
+}
+
+.audio {
+  position: fixed;
+  z-index: 4;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff7a7a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: background-color 300ms ease-in-out;
+}
+
+.audio:hover{
+  background-color: #fdb418;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+
+.user-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 40px;
+  background-color: #fceec1;
+  height: 375px;
+  width: 600px;
+}
+
+.user-wrap .profile {
+  margin: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .text {
+  margin-left: 30px;  
+}
+.user-wrap img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+.user-wrap .bio {
+  margin-left: 30px; 
+  background: #fac1a3;
+  border-radius: 20px;
+  width: 80%;
+  height: 150px;
+}
+
+.user-wrap .option {
+  margin-left: 100px
+}
+
+.option button:hover {
+  background-color: #fc6c6c;
+}
+.user-wrap button {
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  display: block;
+  margin: 5px;
+  background-color: #747476;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 0.25s;
+}
+.bio p {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.edit-profile {
+  display: none;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  position: fixed;
+  background-color: #ffa2a2;
+  height: 400px;
+  width: 450px;
+  border-radius: 20px;
+}
+video {
+  border-radius: 20px;
+}
+
+.wrap-edit label {
+  display: block;
+  font-weight: bold;
+  color: #ffeeb8;
+}
+
+.wrap-edit input {
+  background: none;
+  border: 1px solid #ef5e41;
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+}
+
+.wrap-edit {
+  margin: 30px;
+  height: 350px;
+  overflow-y:scroll;
+}
+
+.wrap-edit button {
+  background-color: #c1c4ff;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  color: rgb(244, 244, 244);
+  font-weight: bold;
+}
+
+.edit {
+  margin-bottom: 20px;
+}
+
+#modal2 {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #0000005f;
+}
+
+textarea {
+  width: 90px;
 }
